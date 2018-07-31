@@ -1,8 +1,8 @@
 # MyReads Project
 
-This is the starter template for the final assessment project for Udacity's React Fundamentals course. The goal of this template is to save you time by providing a static example of the CSS and HTML markup that may be used, but without any of the React code that is needed to complete the project. If you choose to start with this template, your job will be to add interactivity to the app by refactoring the static code in this template.
+This app allows user to categorize a list of books into shelves (Currently Reading, Want to Read and Read). User can search through a list of books in the search window and change status of any book.
 
-Of course, you are free to start this project from scratch if you wish! Just be sure to use [Create React App](https://github.com/facebookincubator/create-react-app) to bootstrap the project.
+App is developed using React framework
 
 ## Launching The App
 
