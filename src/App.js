@@ -1,4 +1,6 @@
 import React from 'react'
+import BookComponent from './BookComponent'
+import LandingPage from './LandingPage'
 // import * as BooksAPI from './BooksAPI'
 import './App.css'
 
