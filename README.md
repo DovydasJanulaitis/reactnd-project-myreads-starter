@@ -9,7 +9,7 @@ App is developed using React framework
 To launch the app:
 
 * Clone this repository to your local machine using `git clone https://github.com/DovydasJanulaitis/reactnd-project-myreads-starter.git`
-* Navigate to the clone project directory
+* Navigate to the directory of cloned repository on your local machine
 * Install all project dependencies with `npm install`
 * Start the development server with `npm start`
 
