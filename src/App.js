@@ -18,11 +18,21 @@ class BooksApp extends React.Component {
     })
   }
 
+// function to move books to another shelf on landing page
+  changeShelf = (book, shelf) => {
+    BooksAPI.update(book, shelf)
+
+    BooksAPI.getAll().then((booksList) => {
+      this.setState({ booksList: booksList})
+    })
+  }
+
   render() {
     return (
       <div className="app">
         <Route exact path='/' render={() => (
             <LandingPage
+              changeShelf={this.changeShelf}
               booksList={this.state.booksList}
             />
           )}

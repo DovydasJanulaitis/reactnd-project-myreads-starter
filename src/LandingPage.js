@@ -28,6 +28,7 @@ class LandingPage extends Component {
                       <BookComponent
                         existingShelf='currentlyReading'
                         book={book}
+                        changeShelf={this.props.changeShelf}
                       />
                     </li>
                   ))}
@@ -45,6 +46,7 @@ class LandingPage extends Component {
                       <BookComponent
                         existingShelf='wantToRead'
                         book={book}
+                        changeShelf={this.props.changeShelf}
                       />
                     </li>
                   ))}
@@ -62,6 +64,7 @@ class LandingPage extends Component {
                       <BookComponent
                         existingShelf='read'
                         book={book}
+                        changeShelf={this.props.changeShelf}
                       />
                     </li>
                   ))}
