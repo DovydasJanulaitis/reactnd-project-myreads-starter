@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import BookComponent from './BookComponent'
+import { Link } from 'react-router-dom'
 
 class LandingPage extends Component {
   render() {
