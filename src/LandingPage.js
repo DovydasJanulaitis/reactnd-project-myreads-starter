@@ -14,9 +14,13 @@ class LandingPage extends Component {
               <h2 className="bookshelf-title">Currently Reading</h2>
               <div className="bookshelf-books">
                 <ol className="books-grid">
-                  <li>
-                    <BookComponent />
-                  </li>
+                  {this.props.booksList
+                  .filter(book => book.shelf === 'currentlyReading')
+                  .map(book => (
+                    <li key={book.id}>
+                      <BookComponent />
+                    </li>
+                  ))}
                 </ol>
               </div>
             </div>
