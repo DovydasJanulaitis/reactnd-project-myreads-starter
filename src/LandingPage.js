@@ -25,6 +25,7 @@ class LandingPage extends Component {
                   .map(book => (
                     <li key={book.id}>
                       <BookComponent
+                        existingShelf='currentlyReading'
                         book={book}
                       />
                     </li>
@@ -41,6 +42,7 @@ class LandingPage extends Component {
                   .map(book => (
                     <li key={book.id}>
                       <BookComponent
+                        existingShelf='wantToRead'
                         book={book}
                       />
                     </li>
@@ -57,6 +59,7 @@ class LandingPage extends Component {
                   .map(book => (
                     <li key={book.id}>
                       <BookComponent
+                        existingShelf='read'
                         book={book}
                       />
                     </li>
