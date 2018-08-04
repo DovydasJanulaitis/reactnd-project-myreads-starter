@@ -14,6 +14,11 @@ class LandingPage extends Component {
               <h2 className="bookshelf-title">Currently Reading</h2>
               <div className="bookshelf-books">
                 <ol className="books-grid">
+                  // Filter through list of books from API call.
+                  // Leave only the ones that match shelf name.
+                  // Map through the result array and create
+                  // li element for every single book that
+                  // matches the shelf name
                   {this.props.booksList
                   .filter(book => book.shelf === 'currentlyReading')
                   .map(book => (
