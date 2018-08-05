@@ -61,6 +61,7 @@ class SearchPage extends Component {
               return (
                 <li key={identifiedBook.id}>
                   <BookComponent
+                    changeShelf={this.props.changeShelf}
                     book={identifiedBook}
                     existingShelf={shelf}
                     />
