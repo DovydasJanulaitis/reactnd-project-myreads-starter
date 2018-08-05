@@ -12,18 +12,21 @@ class BooksApp extends React.Component {
   }
 
   // API call to fetch book data from Udacity API
-  componentDidMount() {
+  getBooks = () => {
     BooksAPI.getAll().then((booksList) => {
       this.setState({ booksList: booksList})
     })
   }
 
+  // lifecycle event invokes the API call
+  componentDidMount() {
+    this.getBooks()
+  }
+
 // function to move books to another shelf on landing page
   changeShelf = (book, shelf) => {
-    BooksAPI.update(book, shelf)
-
-    BooksAPI.getAll().then((booksList) => {
-      this.setState({ booksList: booksList})
+    BooksAPI.update(book, shelf).then(() => {
+      this.getBooks()
     })
   }
 
